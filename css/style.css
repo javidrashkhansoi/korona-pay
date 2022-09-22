@@ -365,6 +365,14 @@ body.lock::before {
   width: 100%;
 }
 
+.burger.active:focus span {
+  background-color: #e50817;
+}
+
+.burger.active:focus span:nth-child(2) {
+  width: 0;
+}
+
 .burger.active span:nth-child(1) {
   top: 50%;
   -webkit-transform: translateY(-50%) rotate(135deg);
@@ -1297,6 +1305,14 @@ body.lock::before {
 
   .burger:hover span:nth-child(2) {
     width: 100%;
+  }
+
+  .burger.active:hover span {
+    background-color: #e50817;
+  }
+
+  .burger.active:hover span:nth-child(2) {
+    width: 0;
   }
 
   .nav-header__link:hover {
