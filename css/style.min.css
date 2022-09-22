@@ -414,6 +414,13 @@ body.lock::before {
     width: 100%;
   }
 }
+@media (max-width: 480px) {
+  .nav-header {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    row-gap: 30px;
+  }
+}
 @media (min-width: 1025px) {
   .nav-header__list {
     display: grid;
@@ -425,11 +432,6 @@ body.lock::before {
 @media (min-width: 1025px) and (max-width: 1200px) {
   .nav-header__list {
     column-gap: 20px;
-  }
-}
-@media (max-width: 480px) {
-  .nav-header__list {
-    margin: 0 0 30px;
   }
 }
 @media (min-width: 1025px) {
