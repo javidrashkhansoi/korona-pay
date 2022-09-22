@@ -759,3 +759,323 @@ body.lock::before {
     text-align: right;
   }
 }
+
+.banner {
+  padding: 30px 0 45px;
+  color: #fff;
+}
+@media (max-width: 1200px) {
+  .banner {
+    padding-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    padding-bottom: 30px;
+  }
+}
+.banner__inner {
+  position: relative;
+  padding: 0 60px;
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+@media (max-width: 1200px) {
+  .banner__inner {
+    padding-top: calc(40px + 36 * ((100vw - 280px) / 920));
+  }
+}
+@media (max-width: 1200px) {
+  .banner__inner {
+    padding-bottom: calc(40px + 36 * ((100vw - 280px) / 920));
+  }
+}
+@media (min-width: 769px) {
+  .banner__inner {
+    display: grid;
+    grid-template-columns: 1fr 351px;
+    row-gap: 20px;
+    align-items: start;
+  }
+}
+@media (min-width: 1201px) {
+  .banner__inner {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1200px) {
+  .banner__inner {
+    margin: 0 -15px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+.banner__inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(92.89deg, #eb5858 2.4%, #e22424 89.26%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.banner__title {
+  align-self: end;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: 40px;
+}
+@media (max-width: 1200px) {
+  .banner__title {
+    font-size: calc(25px + 15 * ((100vw - 280px) / 920));
+  }
+}
+@media (max-width: 768px) {
+  .banner__title {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+}
+.banner__image-ibg {
+  grid-row: span 2;
+  padding-bottom: 58.9743589744%;
+}
+@media (max-width: 768px) {
+  .banner__image-ibg {
+    max-width: 351px;
+    margin: 0 auto 20px;
+    padding-bottom: 28.0487804878%;
+  }
+}
+.banner__text {
+  line-height: 1.625;
+  font-size: 16px;
+}
+@media (max-width: 1200px) {
+  .banner__text {
+    font-size: calc(12px + 4 * ((100vw - 280px) / 920));
+  }
+}
+@media (max-width: 768px) {
+  .banner__text {
+    text-align: center;
+  }
+}
+
+.request {
+  padding: 45px 0 90px;
+}
+@media (max-width: 1200px) {
+  .request {
+    padding-bottom: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .request {
+    padding: 30px 0;
+  }
+}
+.request__title {
+  max-width: 600px;
+  margin: 0 0 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 1.3529411765;
+  font-size: 34px;
+}
+@media (max-width: 1200px) {
+  .request__title {
+    font-size: calc(20px + 14 * ((100vw - 280px) / 920));
+  }
+}
+.request__label {
+  margin: 0 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.2272727273;
+  font-size: 22px;
+}
+@media (max-width: 1200px) {
+  .request__label {
+    font-size: calc(16px + 6 * ((100vw - 280px) / 920));
+  }
+}
+.request__text {
+  margin: 0 0 40px;
+  font-weight: 300;
+  line-height: 1.625;
+  color: #636363;
+  font-size: 16px;
+}
+@media (max-width: 1200px) {
+  .request__text {
+    font-size: calc(12px + 4 * ((100vw - 280px) / 920));
+  }
+}
+.request__text a {
+  text-decoration: underline;
+  color: #e50817;
+}
+.request__text a:focus {
+  text-decoration: none;
+}
+@media (any-hover: hover) {
+  .request__text a:hover {
+    text-decoration: none;
+  }
+}
+.cards-request__item:not(:last-child) {
+  margin: 0 0 20px;
+}
+
+.card-request {
+  min-height: 120px;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (any-hover: hover) {
+  .card-request:hover {
+    box-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.1490196078);
+  }
+}
+@media (min-width: 551px) {
+  .card-request {
+    display: grid;
+    grid-template-columns: 170px 1fr auto;
+    align-items: center;
+    column-gap: 98px;
+  }
+}
+@media (min-width: 551px) and (max-width: 1200px) {
+  .card-request {
+    column-gap: calc(20px + 78 * ((100vw - 992px) / 208));
+  }
+}
+@media (min-width: 551px) and (max-width: 992px) {
+  .card-request {
+    grid-template-columns: 1fr auto;
+    row-gap: 20px;
+  }
+}
+.card-request__image-ibg {
+  width: 170px;
+  height: 60px;
+}
+@media (max-width: 550px) {
+  .card-request__image-ibg {
+    margin: 0 auto 20px;
+  }
+}
+@media (max-width: 550px) {
+  .card-request__list {
+    margin: 0 0 20px;
+  }
+}
+.card-request__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  padding: 5px 35px;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-request__button:focus::before {
+  left: 100%;
+}
+.card-request__button:focus::after {
+  left: 0;
+}
+@media (any-hover: hover) {
+  .card-request__button:hover::before {
+    left: 100%;
+  }
+  .card-request__button:hover::after {
+    left: 0;
+  }
+}
+.card-request__button::before, .card-request__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: left 0.3s;
+}
+.card-request__button::before {
+  left: 0;
+  background-image: linear-gradient(92.89deg, #eb5858 2.4%, #e22424 89.26%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.card-request__button::after {
+  left: -100%;
+  background-color: #222222;
+}
+.card-request__button span {
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 551px) {
+  .list-request {
+    display: grid;
+    grid-template-columns: 0.8936170213fr 1.1063829787fr;
+    row-gap: 5px;
+    column-gap: 80px;
+  }
+}
+@media (min-width: 551px) and (max-width: 1200px) {
+  .list-request {
+    column-gap: calc(20px + 60 * ((100vw - 992px) / 208));
+  }
+}
+@media (min-width: 551px) and (max-width: 992px) {
+  .list-request {
+    column-gap: 40px;
+    grid-column: span 2;
+    order: 1;
+  }
+}
+.list-request__item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 3px;
+  align-items: end;
+  line-height: 1.625;
+}
+.list-request__item:first-child .list-request__value {
+  white-space: nowrap;
+}
+@media (max-width: 550px) {
+  .list-request__item:not(:last-child) {
+    margin: 0 0 10px;
+  }
+}
+.list-request__label {
+  font-weight: 300;
+  color: #636363;
+}
+.list-request__lines {
+  position: relative;
+  top: -0.4375em;
+  min-width: 20px;
+  line-height: 1;
+  border-bottom: 1px dashed #636363;
+}
+.list-request__value {
+  font-weight: 500;
+  text-align: right;
+}
+.list-request__value_red {
+  color: #e50817;
+}
